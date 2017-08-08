@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Contact
+        </title>
+        <meta charset="UTF-8" >
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>
+                World Travel
+            </h1>
+        </header>
+        <div id='content'>
+            <div id=formSide>
+                <form id='form'>
+                    <h2>Vos coordonnées</h2>
+                    <div id='coo'>
+                    <label for="nom">Nom : </label><input name='nom' id='nom' type="text"><br/>
+                    <label for="prenom">Prenom : </label><input name='prenom' id='prenom' type="text"><br/>
+                    <label for="mail">Mail : </label><input name='mail' id='mail' type="text"><br/></div>
+                    <h2>Choisissez votre destination</h2>
+                    <div id='dest'>
+                        <label for="cont">Continent : </label>
+                        <select name='cont' id='continent'>
+                            <option value="afrique">Afrique</option>
+                            <option value="amerique">Amérique</option>
+                            <option value="asie">Asie</option>
+                            <option value="europe">Europe</option>
+                            <option value="oceanie">Océanie</option>
+                        </select><br/>
+                        <label for="pays">Pays : </label>
+                        <select name='pays' id='pays'>
+                        </select>
+                        <div id='msg'></div>
+                    <input type='submit' name='ok' value='Envoyer'></div>
+
+                </form>
+            </div>
+
+            <div id=bonPlanSide>
+                <h2>Bon plan</h2>
+                <div id='bp'>
+                  <img src="./img/BonsPlans1.jpg" alt="Bons Plan 1">
+                  <img src="./img/BonsPlans2.jpg" alt="Bons Plan 2">
+                </div>
+            </div>
+        </div>
+        <div id="msgOk">
+          <p>Merci pour votre message<br />
+            <button type="button" name="button" id="closeMsg">Fermer</button>
+          </p>
+        </div>
+        <script src="js/ajax.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+body
+{
+  background-color: #a4afc1;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+header
+{
+    background-image:url(../img/banniere.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 120px;
+    height: 120px;
+    margin:-10px;
+    display: flex;
+}
+
+h1
+{
+    margin:6% 7%;
+    font-size: 5vw;
+    color:white;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+
+#content
+{
+    display: inline-block;
+    width: 100%;
+}
+
+#formSide
+{
+    width: 42%;
+    float: left;
+    font-weight: 800;
+    padding: 0 4%;
+}
+
+#coo
+{
+    text-align: right;
+    width: 100%;
+}
+
+#dest
+{
+    text-align: right;
+    width: 100%;
+}
+
+#bonPlanSide
+{
+    float: left;
+    width: 42%;
+    padding: 0 4%;
+}
+
+h2
+{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+label{
+  width: 30%;
+}
+
+input, select
+{
+  font-size: 1.3em;
+  width: 70%;
+  height: 35px;
+  margin: 1%;
+}
+#msg{
+  text-align: center;
+  font-size: 1.3em;
+  color: #FAA;
+}
+
+#bp
+{
+    display: flex;
+    padding: 5px;
+}
+#msgOk{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 999;
+  background: rgba(0,0,0,0.7);
+}
+#msgOk p{
+  display: block;
+  margin: auto;
+  background: #ffffff;
+  width: 40vw;
+  height: 20vh;
+  border-radius: 10px;
+  padding: 5vh 5vw;
+  font-size: 2em;
+}
+/*Pour passer les bon plan en 1 colonne sur tablette*/
+@media screen and (max-width: 1000px) {
+  #bp
+  {
+    flex-direction: column;
+    width: 98%;
+  }
+  #bp img
+  {
+    width: 100%;
+  }
+}
+/*Pour passer en mode smartphone*/
+@media screen and (max-width: 600px) {
+    h1
+    {
+      font-size: 10vw;
+    }
+    #formSide
+    {
+        width: 80%;
+    }
+    label{
+      width: 100%;
+    }
+    input, select
+    {
+      width: 100%;
+    }
+
+    body
+    {
+        font-size: 18px;
+    }
+    #bonPlanSide
+    {
+        width: 80%;
+        margin: auto;
+
+    }
+
+}
